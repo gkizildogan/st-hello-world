@@ -49,6 +49,6 @@ df["Assessment"] = df["Assessment"].replace("İlksel", "Primary")
 df.insert(0, "Timestamp", value=pd.to_datetime(df["Date"] + " " + df["Time"]))
 
 df = df.drop(columns=["Date", "Time"])
-print(df.head())
+st.write(df.head())
 #df.to_csv("temp_data_df.csv", index=False)
 
